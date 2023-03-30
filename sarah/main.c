@@ -9,6 +9,11 @@
 
 #define DEBUG 0 
 
+void debug1() {
+#if DEBUG == 1
+	printf("Multiple trouve : ");
+#endif
+}
 void debug3(int i, int j, int k) {
 #if DEBUG == 1
 	printf("log: %d %% %d = %d\n", i, j, k);
@@ -19,7 +24,7 @@ void debug3(int i, int j, int k) {
 int main(int argc, char *argv[]) {
 	int n=0;
 	printf("ceci est un generateur de nombres premiers inferieurs ou egaux a N\n\n");
-	printf("votre valeur de N svp:\n");
+	printf("votre valeur de N svp: ");
 	scanf("%i",&n);
 	printf("N = %d\n",n);
 	if (n>3) {
@@ -30,7 +35,11 @@ int main(int argc, char *argv[]) {
 				       // Ensuite on doit faire un ET logique pour
 				       // s'assurer que nous n'avons trouve aucun
 				       // multiple, alors on a bien un nombre premier.
-				if (!r) i_est_premier = 0; // Modulo nul => multiple
+				if (!r) {
+					i_est_premier = 0; // Modulo nul => multiple
+					debug1();
+				}
+
 				debug3(i,j,r); // Pour debuguer on peut afficher les valeurs intermediaires
 			}
 			if (i_est_premier)
