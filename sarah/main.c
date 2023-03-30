@@ -17,7 +17,7 @@ void debug3(int i, int j, int k) {
 
 
 int main(int argc, char *argv[]) {
-	int n=0,r=0;
+	int n=0;
 	printf("ceci est un generateur de nombres premiers inferieurs ou egaux a N\n\n");
 	printf("votre valeur de N svp:\n");
 	scanf("%i",&n);
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 		for (int i=3;i<=n;i++) {
 			int i_est_premier = 1; // Est presume premier jusqu'a ce que l'on trouve un multiple
 			for (int j=2;j<i;j++) { // j Strictement < i
-				r=i%j; // Oui on voit << n'est pas un multiple de >>
+				int r=i%j; // Oui on voit << n'est pas un multiple de >>
 				       // Ensuite on doit faire un ET logique pour
 				       // s'assurer que nous n'avons trouve aucun
 				       // multiple, alors on a bien un nombre premier.
