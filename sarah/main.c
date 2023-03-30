@@ -27,6 +27,7 @@ int main(int argc, char *argv[]) {
 	printf("votre valeur de N svp: ");
 	scanf("%i",&n);
 	printf("N = %d\n",n);
+	printf("1\n2\n");
 	if (n>3) {
 		for (int i=3;i<=n;i++) {
 			int i_est_premier = 1; // Est presume premier jusqu'a ce que l'on trouve un multiple
@@ -46,6 +47,5 @@ int main(int argc, char *argv[]) {
 				printf("%d\n",i);
 		}
 	}
-	else printf("\n 3");
 	return 0;
 }
