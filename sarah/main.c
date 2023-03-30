@@ -26,8 +26,7 @@ int main(int argc, char *argv[]) {
 		for (int i=3;i<=n;i++) {
 			int i_est_premier = 1; // Est presume premier jusqu'a ce que l'on trouve un multiple
 			for (int j=2;j<i;j++) { // j Strictement < i
-				r=i%j; // i%j -> j%i
-				       // Oui on voit << n'est pas un multiple de >>
+				r=i%j; // Oui on voit << n'est pas un multiple de >>
 				       // Ensuite on doit faire un ET logique pour
 				       // s'assurer que nous n'avons trouve aucun
 				       // multiple, alors on a bien un nombre premier.
