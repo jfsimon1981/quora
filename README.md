@@ -2,14 +2,19 @@
 Index
 
   - C++ Static instance
+
 Demonstrates the order of instanciation when declaring variables static.
+
   - Guess Number
+
 Small game Guess a numbers with limited trials
+
   - Sara C/C++ example
   - Unit test configuration example
+
 Sample code to make unit tests in any compile environment
 
-# References
+# Extern sites
 
   - Le Comptoire Electronique / The Electronics Boards
 
