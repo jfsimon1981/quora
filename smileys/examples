@@ -1,0 +1,8 @@
+You can provide the smiley ie execute smiley Blink.
+:)
+portabledynabook$ ./smileys Blink
+;)
+portabledynabook$ ./smileys Shine 
+Smileys app supports: Happy, Crying, Neutral, Doubtful, Blink
+:)
+
